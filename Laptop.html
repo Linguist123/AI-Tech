@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptops</title>
+    <link rel = "icon" href = "img/download.png" type = "image/x-icon">
+    <link rel="stylesheet" href="laptop.css">
+    <style>
+        body{
+           background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for products type" title="Type in a name" color="#fff" >
+
+    <ul id="myUL">
+        <li><a href="Asus rog.html">Asus ROG </a></li>
+        <li><a href="Computer.html">Vivobook 15</a></li>
+      
+        <li><a href="phones.html">XPS 13 Laptop</a></li>
+        <li><a href="#">ASUS VIVOBOOK Flip 14</a></li>
+      
+        <li><a href="#">Inspiron 15 3000 Laptop</a></li>
+        <li><a href="#">ThinkBook 14 Gen 2</a></li>
+        
+      </ul>
+      
+      <script>
+      function myFunction() {
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+              a = li[i].getElementsByTagName("a")[0];
+              txtValue = a.textContent || a.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+              } else {
+                  li[i].style.display = "none";
+              }
+          }
+      }
+      </script>
+    
+</body>
+</html>

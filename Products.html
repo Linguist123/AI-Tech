@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products</title>
+<link rel="stylesheet" href="products.css">
+<link rel = "icon" href = "img/download.png" type = "image/x-icon">
+</head>
+<body>
+
+<h2 style="color: #fff;">Products</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for products type" title="Type in a name" color="#fff" >
+
+<ul id="myUL">
+  <li><a href="Laptop.html">Laptop</a></li>
+  <li><a href="Computer.html">Computers</a></li>
+
+  <li><a href="phones.html">Smartphones</a></li>
+  <li><a href="#">Televisions</a></li>
+
+  <li><a href="#">Home appliances</a></li>
+  <li><a href="#">Computer acessories</a></li>
+  
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>

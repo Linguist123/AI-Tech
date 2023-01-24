@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    float: left;
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+
+
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    float: left;
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  
+  #myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    color: #fff;
+  }
+  
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: green;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    display: block
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee;
+  }
